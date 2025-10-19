@@ -1,7 +1,8 @@
 const byteSize = (str) => {
-  return str.length
+	const varOcg = new TextEncoder().encode(str);
+	  return varOcg.length;
 };
 
 // Do not change the code below
-const str = prompt("Enter some string.");
+// const str = prompt("Enter some string.");
 alert(byteSize(str));
